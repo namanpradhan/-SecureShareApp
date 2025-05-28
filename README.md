@@ -155,14 +155,25 @@ secure-share-app/
 6. **MFA Setup** → QR code shown → User scans with Google Authenticator → Code verified → MFA enabled.
 
 ---
+## 🧪 Setup Instructions
 
-## 💡 Possible Enhancements
+### 1. Create a Virtual Environment
+```
+sudo apt install python3 python3-pip
+python3 -m venv venv
+source venv/bin/activate  # macOS/Linux
+# OR
+venv\Scripts\activate     # Windows
+```
+### 2. Install Python Dependencies
+```
+pip install -r requirements.txt
+```
 
-* ✅ Add file sharing with other users
-* ✅ Add file previews (PDF/Image)
-* ✅ Use AWS S3 / cloud for encrypted file storage
-* ✅ Add logging and auditing features
-* ✅ Add password reset via email
+### 3.Run
+```
+python app.py 
+```
 * ✅ Dockerize the application
 * ✅ Environment-based configuration (`.env`)
 * ✅ Use PostgreSQL for production
